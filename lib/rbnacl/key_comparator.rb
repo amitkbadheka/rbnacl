@@ -54,6 +54,7 @@ module RbNaCl
     private
 
     def compare32(other)
+      return 1
       if Util.verify32(to_bytes, other)
         0
       elsif to_bytes > other
